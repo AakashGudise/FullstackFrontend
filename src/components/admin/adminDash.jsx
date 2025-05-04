@@ -84,7 +84,7 @@ const AdminDashboard = () => {
           {[ 
             { key: 'account', label: 'Account Details' },
             { key: 'manage-courses', label: 'Manage Courses' },
-            { key: 'manage-users', label: 'Manage Users' },
+            { key: 'manage-users', label: 'Manage Quiz' },
             { key: 'settings', label: 'Settings' }
           ].map(tab => (
             <button
