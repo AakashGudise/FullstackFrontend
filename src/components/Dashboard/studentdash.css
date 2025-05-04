@@ -1,0 +1,16 @@
+.course-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .course-item {
+    padding: 12px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+  }
+  
+  .course-item:hover {
+    background-color: #e0e0e0;
+  }
+  

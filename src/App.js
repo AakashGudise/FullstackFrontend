@@ -14,10 +14,10 @@ import CourseList from './components/Courses/courseList';
 import CourseDetails from './components/Courses/coursesDetails';
 import Dashboard from './components/Dashboard/studentdash';
 import CourseForm from './components/Courses/courseForm';
-import CoursePage from './components/Courses/courseData';
 import CoursePage2 from './components/Courses/courseData2';
 import StudentDashboard2 from './components/Dashboard/studentdash';
 import AdminDashboard from './components/admin/adminDash';
+import FullCourseDetails from './components/Courses/FullCourseDetails';
 
 function App() {
   return (
@@ -35,9 +35,10 @@ function App() {
         <Route path="/courses/:id" element={<CourseDetails />} />
 <Route path="/dashboard" element={<Dashboard />} />
 <Route path="/courseForm" element={<CourseForm />} />
-<Route path="/coursePage" element={<CoursePage />} />
+{/* <Route path="/coursePage" element={<CoursePage />} /> */}
 <Route path="/coursePage2/:id" element={<CoursePage2 />} />
 <Route path="/StudentDash2" element={<StudentDashboard2 />} />
+<Route path="//course/:id" element={<FullCourseDetails />} />
 {/* <Route path="/dashboard" element={<Dashboard />} /> */}
 
         {/* <Route path="/UserDash" element={<UserDash />} /> */}
