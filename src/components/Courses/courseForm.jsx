@@ -119,6 +119,7 @@
 
 import React, { useState } from 'react';
 import api from '../../api/api';
+import'./courseForm.css'
 
 function CourseForm() {
   const [title, setTitle] = useState('');
@@ -162,54 +163,108 @@ function CourseForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} style={{ maxWidth: '600px', margin: 'auto' }}>
-      <h2>Add New Course</h2>
+    // <form onSubmit={handleSubmit} style={{ maxWidth: '600px', margin: 'auto' }}>
+    //   <h2>Add New Course</h2>
+    //   <input
+    //     type="text"
+    //     placeholder="Course Title"
+    //     value={title}
+    //     onChange={(e) => setTitle(e.target.value)}
+    //     required
+    //   /><br />
+    //   <textarea
+    //     placeholder="Course Description"
+    //     value={description}
+    //     onChange={(e) => setDescription(e.target.value)}
+    //     required
+    //   /><br />
+    //   <input
+    //     type="file"
+    //     accept="image/*"
+    //     onChange={(e) => setImage(e.target.files[0])}
+    //     required
+    //   /><br />
+
+    //   <h3>Modules (Max 10)</h3>
+    //   {modules.map((module, idx) => (
+    //     <div key={idx} style={{ marginBottom: '1rem', border: '1px solid #ccc', padding: '0.5rem' }}>
+    //       <input
+    //         type="text"
+    //         placeholder={`Module ${idx + 1} Title`}
+    //         value={module.name}
+    //         onChange={(e) => handleModuleChange(idx, 'name', e.target.value)}
+    //         required
+    //       /><br />
+    //       <textarea
+    //         placeholder={`Module ${idx + 1} Description`}
+    //         value={module.description}
+    //         onChange={(e) => handleModuleChange(idx, 'description', e.target.value)}
+    //         required
+    //       />
+    //     </div>
+    //   ))}
+    //   {modules.length < 10 && (
+    //     <button type="button" onClick={addModule}>
+    //       Add Module
+    //     </button>
+    //   )}
+    //   <br /><br />
+    //   <button type="submit">Submit Course</button>
+    // </form>
+    <form onSubmit={handleSubmit} className="course-form-container">
+  <h2>Add New Course</h2>
+
+  <input
+    type="text"
+    placeholder="Course Title"
+    value={title}
+    onChange={(e) => setTitle(e.target.value)}
+    required
+  />
+
+  <textarea
+    placeholder="Course Description"
+    value={description}
+    onChange={(e) => setDescription(e.target.value)}
+    required
+  />
+
+  <input
+    type="file"
+    accept="image/*"
+    onChange={(e) => setImage(e.target.files[0])}
+    required
+  />
+
+  <h3>Modules (Max 10)</h3>
+  {modules.map((module, idx) => (
+    <div key={idx} className="module-box">
       <input
         type="text"
-        placeholder="Course Title"
-        value={title}
-        onChange={(e) => setTitle(e.target.value)}
+        placeholder={`Module ${idx + 1} Title`}
+        value={module.name}
+        onChange={(e) => handleModuleChange(idx, 'name', e.target.value)}
         required
-      /><br />
+      />
       <textarea
-        placeholder="Course Description"
-        value={description}
-        onChange={(e) => setDescription(e.target.value)}
+        placeholder={`Module ${idx + 1} Description`}
+        value={module.description}
+        onChange={(e) => handleModuleChange(idx, 'description', e.target.value)}
         required
-      /><br />
-      <input
-        type="file"
-        accept="image/*"
-        onChange={(e) => setImage(e.target.files[0])}
-        required
-      /><br />
+      />
+    </div>
+  ))}
 
-      <h3>Modules (Max 10)</h3>
-      {modules.map((module, idx) => (
-        <div key={idx} style={{ marginBottom: '1rem', border: '1px solid #ccc', padding: '0.5rem' }}>
-          <input
-            type="text"
-            placeholder={`Module ${idx + 1} Title`}
-            value={module.name}
-            onChange={(e) => handleModuleChange(idx, 'name', e.target.value)}
-            required
-          /><br />
-          <textarea
-            placeholder={`Module ${idx + 1} Description`}
-            value={module.description}
-            onChange={(e) => handleModuleChange(idx, 'description', e.target.value)}
-            required
-          />
-        </div>
-      ))}
-      {modules.length < 10 && (
-        <button type="button" onClick={addModule}>
-          Add Module
-        </button>
-      )}
-      <br /><br />
-      <button type="submit">Submit Course</button>
-    </form>
+  {modules.length < 10 && (
+    <button type="button" onClick={addModule}>
+      Add Module
+    </button>
+  )}
+
+  <br />
+  <button type="submit">Submit Course</button>
+</form>
+
   );
 }
 
