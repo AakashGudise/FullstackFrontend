@@ -11,7 +11,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:5000/api', // your backend URL
+  baseURL: 'https://fullstackbackend-1-9nc2.onrender.com/api', // your backend URL
   withCredentials: true // 👈 crucial for cookies to work
 });
 
