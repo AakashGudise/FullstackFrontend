@@ -1,0 +1,133 @@
+.course-container {
+    max-width: 100%;
+    margin: 0 ;
+    padding: 2rem;
+    font-family: sans-serif;
+    color: #333;
+  }
+  .course-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px 0;
+    
+  }
+  
+  .meta-left span {
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: 500;
+  }
+  
+  .enroll-button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .enroll-button:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  .course-header {
+    background-color: #236363;
+    color: white;
+    padding: 2rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+  
+  .course-header .instructor-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .course-header .instructor-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .course-header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  
+  .course-header p {
+    margin: 0.5rem 0;
+  }
+  
+  .course-header .course-meta {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .course-tabs {
+    background: white;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+  
+  .course-tabs .tab-buttons {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1.5rem;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .course-tabs .tab-buttons button {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+    color: #666;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .course-tabs .tab-buttons button.active {
+    color: #008b8b;
+    border-color: #008b8b;
+  }
+  
+  .course-content {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .course-content ul {
+    padding-left: 1.2rem;
+    list-style-type: disc;
+  }
+
+
+  .enroll-button.black {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .enroll-button.black:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+  }
+  

@@ -1,0 +1,103 @@
+/* QuestionManager.css */
+
+.question-manager {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .question-manager h2, .question-manager h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .question-manager form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .question-manager input,
+  .question-manager select {
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .question-manager button {
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .question-manager button:hover {
+    background-color: #0056b3;
+  }
+  
+  .question-manager ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1.5rem;
+  }
+  
+  .question-manager li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .question-manager li button {
+    background-color: #dc3545;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+  }
+  
+  .question-manager li button:hover {
+    background-color: #c82333;
+  }
+
+
+  .button-group {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  .button-group button {
+    flex: 1;
+  }
+  
+
+
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .question-manager {
+      padding: 1rem;
+    }
+  
+    .question-manager li {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+  }
+  

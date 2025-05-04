@@ -1,0 +1,29 @@
+.course-list {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: 2rem 0;
+  }
+  
+  .course-card {
+    background-color: #f2f2f2;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .course-card h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .course-card button {
+    margin-top: 1rem;
+    background-color: #007bff;
+    color: white;
+    padding: 0.4rem 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
